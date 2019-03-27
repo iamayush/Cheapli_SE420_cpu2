@@ -2,7 +2,7 @@
 <link_info>
    <banner>TMS320C2000 Linker PC v17.6.0.STS</banner>
    <copyright>Copyright (c) 1996-2017 Texas Instruments Incorporated</copyright>
-   <link_time>0x5c9b967f</link_time>
+   <link_time>0x5c9bbc65</link_time>
    <link_errors>0x0</link_errors>
    <output_file>Cheapli_SE420_cpu2.out</output_file>
    <entry_point>
@@ -544,14 +544,14 @@
          <size>0xe</size>
          <input_file_ref idref="fl-4a"/>
       </object_component>
-      <object_component id="oc-311">
+      <object_component id="oc-310">
          <name>.cinit:__lock</name>
          <load_address>0x8069e</load_address>
          <run_address>0x8069e</run_address>
          <size>0x5</size>
          <input_file_ref idref="fl-4b"/>
       </object_component>
-      <object_component id="oc-310">
+      <object_component id="oc-311">
          <name>.cinit:__unlock</name>
          <load_address>0x806a3</load_address>
          <run_address>0x806a3</run_address>
@@ -7506,8 +7506,8 @@
             <object_component_ref idref="oc-138"/>
             <object_component_ref idref="oc-131"/>
             <object_component_ref idref="oc-1dc"/>
-            <object_component_ref idref="oc-311"/>
             <object_component_ref idref="oc-310"/>
+            <object_component_ref idref="oc-311"/>
             <object_component_ref idref="oc-27c"/>
          </contents>
       </logical_group>
