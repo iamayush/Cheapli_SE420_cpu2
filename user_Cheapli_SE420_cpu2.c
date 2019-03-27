@@ -35,9 +35,9 @@ int adcb1result = 0;
 #define MAX_SEND_LENGTH 1600
 #define MAX_VAR_NUM 10
 
-#pragma DATA_SECTION(matlabLock, ".my_vars")
-float matlabLock = 0;
-float matlabLockshadow = 0;
+//#pragma DATA_SECTION(matlabLock, ".my_vars")
+//float matlabLock = 0;
+//float matlabLockshadow = 0;
 
 // UART 1 GLOBAL VARIABLES
 int	UARTsensordatatimeouterror = 0;	// Initialize timeout error count

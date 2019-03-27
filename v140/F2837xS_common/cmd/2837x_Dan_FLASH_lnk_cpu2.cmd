@@ -37,23 +37,23 @@ PAGE 1 : /* Data Memory */
     LS05SARAM : origin = 0x008000, length = 0x003000 /* on-chip RAM */
 
     /* on-chip Global shared RAMs */
-/*    RAMGS07  : origin = 0x00C000, length = 0x008000
-    RAMGS1  : origin = 0x00D000, length = 0x001000
-    RAMGS2  : origin = 0x00E000, length = 0x001000
-    RAMGS3  : origin = 0x00F000, length = 0x001000
-    RAMGS4  : origin = 0x010000, length = 0x001000
-    RAMGS5  : origin = 0x011000, length = 0x001000
-    RAMGS6  : origin = 0x012000, length = 0x001000
-    RAMGS7  : origin = 0x013000, length = 0x001000 
+    RAMGS07  : origin = 0x00C000, length = 0x008000
+//    RAMGS1  : origin = 0x00D000, length = 0x001000
+//    RAMGS2  : origin = 0x00E000, length = 0x001000
+//    RAMGS3  : origin = 0x00F000, length = 0x001000
+//    RAMGS4  : origin = 0x010000, length = 0x001000
+//    RAMGS5  : origin = 0x011000, length = 0x001000
+//    RAMGS6  : origin = 0x012000, length = 0x001000
+//    RAMGS7  : origin = 0x013000, length = 0x001000
     RAMGS815  : origin = 0x014000, length = 0x008000
-    RAMGS9  : origin = 0x015000, length = 0x001000
-    RAMGS10 : origin = 0x016000, length = 0x001000
-    RAMGS11 : origin = 0x017000, length = 0x001000
-    RAMGS12 : origin = 0x018000, length = 0x001000
-    RAMGS13 : origin = 0x019000, length = 0x001000
-    RAMGS14 : origin = 0x01A000, length = 0x001000
-    RAMGS15 : origin = 0x01B000, length = 0x001000
-*/	
+//    RAMGS9  : origin = 0x015000, length = 0x001000
+//    RAMGS10 : origin = 0x016000, length = 0x001000
+//    RAMGS11 : origin = 0x017000, length = 0x001000
+//    RAMGS12 : origin = 0x018000, length = 0x001000
+//    RAMGS13 : origin = 0x019000, length = 0x001000
+//    RAMGS14 : origin = 0x01A000, length = 0x001000
+//    RAMGS15 : origin = 0x01B000, length = 0x001000
+
    
    CPU2TOCPU1RAM   : origin = 0x03F800, length = 0x000400
    CPU1TOCPU2RAM   : origin = 0x03FC00, length = 0x000400
@@ -93,8 +93,8 @@ SECTIONS
     .ebss               : > RAMGS07	| RAMGS815	PAGE = 1
     .esysmem            : > LS05SARAM | M1SARAM    PAGE = 1
     .cio                : > LS05SARAM | M1SARAM    PAGE = 1
-	.my_arrs			: > RAMGS07	| RAMGS815 PAGE = 1
-	.my_vars			: > RAMGS07	| RAMGS815 PAGE = 1
+	/*.my_arrs			: > RAMGS07	| RAMGS815 PAGE = 1
+	.my_vars			: > RAMGS07	| RAMGS815 PAGE = 1*/
 
     /* Initalized sections go in Flash */
     .econst             : > FLASHA | FLASHB | FLASHC | FLASHD | FLASHE |
