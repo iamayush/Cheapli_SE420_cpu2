@@ -40,7 +40,7 @@ err_t init_serial(serial_t *s, Uint32 baud, void (*got_func)(serial_t *s, char d
 {
 	volatile struct SCI_REGS *sci;
 	Uint32 clk;
-
+#ifdef CPU1
 	if (s == &SerialA) {
 		sci = &SciaRegs;
 
@@ -71,7 +71,7 @@ err_t init_serial(serial_t *s, Uint32 baud, void (*got_func)(serial_t *s, char d
 	else {
 		return E_CRITICAL;
 	}
-
+#endif
 	s->sci = sci;
 	s->got_data = got_func;
 

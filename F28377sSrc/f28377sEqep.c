@@ -24,6 +24,7 @@ eqep_t eqep3;
  *    init_rad_coord = initial radian coordinate for 0 encoder count
  *
  */
+#ifdef CPU1
 void init_EQEP(eqep_t *eqep, enum eQep_e eq, int32 cpr, int pol, float init_rad_coord)
 {
 
@@ -108,7 +109,7 @@ void init_EQEP(eqep_t *eqep, enum eQep_e eq, int32 cpr, int pol, float init_rad_
 
 	}
 }
-
+#endif
 /* EQEP_read(): read QEP encoder's position in radians
  *
  * parameters:

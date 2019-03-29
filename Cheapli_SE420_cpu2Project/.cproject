@@ -50,7 +50,7 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEBUGGING_MODEL.1236610135" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEFINE.1665873757" name="Pre-define NAME (--define, -D)" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEFINE" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FLASH"/>
-									<listOptionValue builtIn="false" value="CPU1"/>
+									<listOptionValue builtIn="false" value="CPU2"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DIAG_WARNING.825132237" name="Treat diagnostic &lt;id&gt; as warning (--diag_warning, -pdsw)" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DIAG_WARNING" valueType="stringList">
 									<listOptionValue builtIn="false" value="225"/>

@@ -1672,14 +1672,11 @@ typedef struct xdc_runtime_Startup_Module_State__ {
 /* Module__state__V */
 xdc_runtime_Startup_Module_State__ xdc_runtime_Startup_Module__state__V;
 
-/* --> ti_catalog_c2800_initF2837x_Boot_initStartup */
-extern xdc_Void ti_catalog_c2800_initF2837x_Boot_initStartup(xdc_Void);
-
 /* --> ti_sysbios_hal_Hwi_initStack */
 extern xdc_Void ti_sysbios_hal_Hwi_initStack(xdc_Void);
 
 /* --> xdc_runtime_Startup_firstFxns__A */
-const __T1_xdc_runtime_Startup_firstFxns xdc_runtime_Startup_firstFxns__A[3];
+const __T1_xdc_runtime_Startup_firstFxns xdc_runtime_Startup_firstFxns__A[2];
 
 /* --> xdc_runtime_LoggerBuf_Module_startup__E */
 extern xdc_Int xdc_runtime_LoggerBuf_Module_startup__E(xdc_Int);
@@ -2319,9 +2316,6 @@ void xdc_runtime_Text_visitRope__I(xdc_runtime_Text_RopeId rope,
  */
 xdc_Void ti_catalog_c2800_initF2837x_Boot_init(xdc_Void)
 {
-    ti_catalog_c2800_initF2837x_Boot_configurePllDivs(40, 0, 1, 0);
-
-    ti_catalog_c2800_initF2837x_Boot_initSharedRAMs(0);
 }
 
 /*
@@ -2330,7 +2324,7 @@ xdc_Void ti_catalog_c2800_initF2837x_Boot_init(xdc_Void)
  */
 xdc_Void ti_catalog_c2800_initF2837x_Boot_initStartup(xdc_Void)
 {
-    ti_catalog_c2800_initF2837x_Boot_initFlash(1, 3, 1, 1);
+    ti_catalog_c2800_initF2837x_Boot_initFlash(0, 3, 1, 1);
 }
 
 /*
@@ -12429,10 +12423,9 @@ asm("	.clink ");
 asm("	.sect \"[1].econst:xdc_runtime_Startup_firstFxns__A\"");
 asm("	.clink ");
 
-const __T1_xdc_runtime_Startup_firstFxns xdc_runtime_Startup_firstFxns__A[3] = {
+const __T1_xdc_runtime_Startup_firstFxns xdc_runtime_Startup_firstFxns__A[2] = {
     ((xdc_Void(*)(xdc_Void))((xdc_Fxn)ti_sysbios_heaps_HeapMem_init__I)),  /* [0] */
-    ((xdc_Void(*)(xdc_Void))((xdc_Fxn)ti_catalog_c2800_initF2837x_Boot_initStartup)),  /* [1] */
-    ((xdc_Void(*)(xdc_Void))((xdc_Fxn)ti_sysbios_hal_Hwi_initStack)),  /* [2] */
+    ((xdc_Void(*)(xdc_Void))((xdc_Fxn)ti_sysbios_hal_Hwi_initStack)),  /* [1] */
 };
 
 /* --> xdc_runtime_Startup_sfxnTab__A */
@@ -12697,7 +12690,7 @@ asm("	.clink ");
 asm("	.sect \"[1].econst:xdc_runtime_Startup_firstFxns__C\"");
 asm("	.clink ");
 
-__FAR__ const CT__xdc_runtime_Startup_firstFxns xdc_runtime_Startup_firstFxns__C = {3, ((__T1_xdc_runtime_Startup_firstFxns*)xdc_runtime_Startup_firstFxns__A)};
+__FAR__ const CT__xdc_runtime_Startup_firstFxns xdc_runtime_Startup_firstFxns__C = {2, ((__T1_xdc_runtime_Startup_firstFxns*)xdc_runtime_Startup_firstFxns__A)};
 
 /* lastFxns__C */
 #pragma DATA_SECTION(xdc_runtime_Startup_lastFxns__C, ".econst:xdc_runtime_Startup_lastFxns__C");

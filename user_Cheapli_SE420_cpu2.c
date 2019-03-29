@@ -207,6 +207,7 @@ void main(void)
     DINT;
     // Clear all CPU interrupt flags:
     IFR = 0x0000;
+    IER = 0x0000;
     // Enable global Interrupts and higher priority real-time debug events:
     EINT;  // Enable Global interrupt INTM
     ERTM;  // Enable Global realtime interrupt DBGM
